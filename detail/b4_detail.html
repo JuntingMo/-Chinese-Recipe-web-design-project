@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobster in Chicken Soup</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/b4.jpg" alt="">
+            <p>Lobster in Chicken Soup</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Lobster in Chicken Soup</li>
+            <li><span>Description</span>
+                <p>This dish is mainly made of lobster, with a seafood dish made of high soup.</p>
+            </li>
+            <li><span>Level</span>Middle</li>
+            <li><span>Time Needed</span>30min</li>
+            <li><span>Main Ingredient</span>Lobster 1.5kg, soup 500g</li>
+            <li><span>Auxiliary Ingredient</span>Water, peanut oil, sesame oil, soy sauce, Shajiang, ginger, onion, coriander, chicken powder</li>
+            <br><li><span>Process</span><br>1. Wash the lobster and starch it. <br>
+                                    <br>2. Put the oil in the pan, control the oil temperature at about 180 ℃, fry the lobster until it is seven, and then remove it.<br>
+                                    <br>3. In a new pan, add butter and stock to taste. Finally put lobster in.<br>
+                                    </li>
+        </ul>
+
+    </div>
+
+</body>

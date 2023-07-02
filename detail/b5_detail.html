@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy fish ball</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/b5.jpg" alt="">
+            <p>Creamy fish ball</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Creamy fish ball</li>
+            <li><span>Description</span>
+                <p>It tastes delicious and can be used as a snack ingredient or even for soup.</p>
+            </li>
+            <li><span>Level</span>Low</li>
+            <li><span>Time Needed</span>20min</li>
+            <li><span>Main Ingredient</span>Spanish mackerel 500g</li>
+            <li><span>Auxiliary Ingredient</span>Onion, starch, egg white, olive oil, salt</li>
+            <br><li><span>Process</span><br>1. After the Spanish mackerel is cleaned, scrape off the fish and add appropriate amount of ginger, water and salt.<br>
+                                    <br>2. Put it into the blender and beat it into fish paste.<br>
+                                    <br>3. Put cold water in the pan and bring to a minimum. Then squeeze out the balls one by one and cook them in warm water.<br>
+                                    <br>4. Cook until the fish balls float.</li>
+        </ul>
+
+    </div>
+
+</body>

@@ -1,0 +1,90 @@
+.content {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+    padding-bottom: 30px;
+    width: 900px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.content .list-title {
+    /* padding-bottom: 5px; */
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.content .list-title li {
+    float: left;
+    padding: 15px 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.content .list-title li.select {
+    transform: translateY(-5px);
+    color: #fff;
+    background: rgba(133,195,110,1);
+}
+.content .list-title li:hover {
+    transition: all .5s;
+    transform: translateY(-5px);
+    color: #fff;
+    background: rgba(133,195,110,1);
+}
+.content .list-pic {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.content .list-pic li {
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 15px;
+    width: 24%;
+    height: 180px;
+    cursor: pointer;
+}
+.content .list-pic li:hover {
+    transition: all .5s;
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+}
+.list-pic li .pic {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.list-pic li .pic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+.list-pic li p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+.list-pic li p i {
+    display: block;
+    float: right;
+    height: 30px;
+    width: 30px;
+    background: url(../images/icon1.png) no-repeat center;
+    background-size: 80%;
+}
+.list-pic li p i.select {
+    background: url(../images/icon2.png) no-repeat center;
+    background-size: 80%;
+}
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    .content {
+        width: 100%;
+    }
+    .content .list-pic li {
+        width: 49%;
+    }
+}

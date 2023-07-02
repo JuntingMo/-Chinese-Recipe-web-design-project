@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Fried chicken</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/a4.jpg" alt="">
+            <p>Spicy Fried chicken</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Spicy Fired chicken</li>
+            <li><span>Description</span>
+                <p>Spicy chicken is a classic Sichuan dish, generally with the whole chicken as the main ingredient.</p>
+            </li>
+            <li><span>Level</span>High</li>
+            <li><span>Time Needed</span>20min</li>
+            <li><span>Main Ingredient</span>Chicken leg 500g, dry pepper 40g, hot pepper 5g</li>
+            <li><span>Auxiliary Ingredient</span>Appropriate amount of oil, salt, onion, cooking wine and soy sauce</li>
+            <br><li><span>Process</span><br>1. Dry pepper, remove bone from chicken leg, add pepper and cooking wine, marinate for 20 minutes.<br>
+                                    <br>2. When the oil temperature reaches 60% heat, pour in chicken nuggets, pour in soy sauce, and add appropriate amount of salt. Heat the oil to 80% heat, pour in the chicken and fry again.<br>
+                                    <br>3. Add chicken, stir-fry for a while, add a little cooking wine, add chili powder, continue to stir-fry evenly, add Dongan rice vinegar, chicken stock and salt, simmer for 5 minutes before serving.</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

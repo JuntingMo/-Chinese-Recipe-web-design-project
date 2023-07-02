@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <ul class="nav">
+            <li><a href="main.html">Main</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="my.html">Mine</a></li>
+            <li><a href="post.html">Post</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <form class=form_1>
+            <div class="input_1"><div class="login_logo">Edit</div><div class="close">Upload</div></div>
+			<hr>
+			<div class="input_1"><input type="text" id="password" placeholder="New password"></div>
+			<div class="input_1"><input type="text" id="E-mail" placeholder="New E-mail"></div>
+            <div class="input_1"><input type="text" id="Tele" placeholder="New Tele"></div>
+        </form>
+        <ul>
+            <li><i>user name</i><span>Zacxiao</span><button id="btn2" style ="background:url(images/help.png);background-size: contain;"></button></li>
+            <li><i>Password</i><span id="password_1">******</span></li>
+            <li><i>E-mail Address</i><span id="E-mail_1">1234567@qmul.ac.uk</span></li>
+            <li><i>Tele</i><span id="Tele_1">123-45678</span></li>
+        </ul>
+        <button id="button1">Edit</button>
+    </div>
+    <script>
+        var btn2=document.getElementById("btn2")
+        var btn3=document.getElementById("btn3")
+	    var btn_1=document.getElementById("button1");
+	    var close=document.getElementsByClassName("close");
+	    var form_1=document.getElementsByClassName("form_1");
+        function repeat(str , n){
+        return new Array(n+1).join(str);
+        }
+	    btn2.addEventListener('click',function(){
+            alert("Thie page will be shown to \n other viewer")
+        })
+        btn_1.addEventListener('click',function(){
+		    form_1[0].className="form_1 open";
+	    })
+	    close[0].addEventListener('click',function(){
+            var name = document.getElementById("E-mail").value;
+            var pw = document.getElementById("password").value;
+            var tele = document.getElementById("Tele").value;
+            var lengh=pw.length;
+            document.getElementById("password_1").innerHTML=repeat("*",lengh);
+            document.getElementById("E-mail_1").innerHTML=name;
+            document.getElementById("Tele_1").innerHTML=tele;
+            form_1[0].className="form_1";
+	    })
+        
+    </script>
+    
+}
+</body>
+
+</html>

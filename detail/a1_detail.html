@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish-flavored shredded pork</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/a1.jpg" alt="">
+            <p style="font-size: 12px">Fish-flavored shredded pork</p>
+        </div>
+        <ul>
+            <li><span>Recipe Name</span>Fish-flavored shredded pork</li>
+            <li><span>Description</span>
+                <p>Fish flavored shredded meat has fine ingredients and rich fish flavor. It tastes salty, sweet, sour and spicy, and the texture of shredded meat is soft and tender.</p>
+            </li>
+            <li><span>Level</span>Low</li>
+            <li><span>Time Needed</span>20min</li>
+            <li><span>Main Ingredient</span>Pork 300g, a carrot, appropriate amount of auricula, 2 green peppers, shallot</li>
+            <li><span>Auxiliary Ingredient</span>1 tbsp starch, 1 tbsp cooking wine, 1 tbsp oil, 1 tbsp salt, 3 tbsp sugar and 2 tbsp soy sauce</li>
+            <br><li><span>Process</span><br>1. Put two ginger slices in the meat, 1 teaspoon of wine, 1 teaspoon of oil, 1 teaspoon of starch and 1 teaspoon of salt. Then add fish sauce: 4 teaspoons vinegar, 3 teaspoons sugar, 2 teaspoons soy sauce, 1 teaspoon starch. Heat the oil and stir fry the shredded meat until discolored.<br>
+                                    <br>2. Add shredded carrot, agaric and green pepper and stir fry. Pour in the fish sauce and stir well. Put in the scallion section before leaving the pot.<br>
+                                    
+        </ul>
+
+    </div>
+
+</body>

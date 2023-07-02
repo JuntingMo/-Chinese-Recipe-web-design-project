@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha skipping wall</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/b2.jpg" alt="">
+            <p>Buddha skipping wall</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Buddha skipping wall</li>
+            <li><span>Description</span>
+                <p>You can eat abalone, sea cucumber, fish lips, Pleurotus eryngii, tendons, mushrooms, cuttlefish, yaozhu, quail eggs</p>
+            </li>
+            <li><span>Level</span>High</li>
+            <li><span>Time Needed</span>30min</li>
+            <li><span>Main Ingredient</span>Six dried abalone, one piece of flower glue, six sea cucumbers, one piece of duck, 100g ham, five mushrooms, six shrimps, ten clams, ten quail eggs.</li>
+            <li><span>Auxiliary Ingredient</span>75g ginger slices, 95g scallion, 10g monosodium glutamate, 75g rock sugar, 75g top soy sauce</li>
+            <br><li><span>Process</span><br>1. Blanch the duck legs and pig claws, wash the fresh abalone and dry the sea cucumber. Jinghua ham, abalone, pork, mushrooms, bamboo shoots, pigeon eggs. Fried duck leg and pig claw.<br>
+                                    <br>2. Add other meats, soup, mushrooms and bamboo shoots, and put them at the end. Stew in casserole for 15 minutes.<br>
+                                    <br>3. Collect the juice and serve. Place broccoli and quail eggs around.</li>
+        </ul>
+
+    </div>
+
+</body>

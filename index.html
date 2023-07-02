@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 登录部分 -->
+    <div class="content">
+        <div class="logo"></div>
+        <h1 class="colorful">Welcome to Cuisine Mastter!</h1>
+        <div class="ipt">
+            <span>ID</span>
+            <input type="text" name="" id="ipt1" placeholder="user">
+        </div>
+        <div class="ipt">
+            <span>Password</span>
+            <input type="text" name="" id="ipt2" placeholder="123456">
+        </div>
+        <div class="btn">
+            <button id="btn1">Confirm</button>
+            <button id="btn2">Skip</button>
+        </div>
+    </div>
+    <script>
+        var btn1 = document.querySelector('#btn1'),
+            btn2 = document.querySelector('#btn2'),
+            ipt1 = document.querySelector('#ipt1'),
+            ipt2 = document.querySelector('#ipt2');
+            btn1.addEventListener('click',function(){
+                if(ipt1.value == 'user' && ipt2.value == '123456'){
+                    window.location = 'main.html';
+                }else {
+                    alert('Wrong account or password!');
+                }
+            })
+            btn2.addEventListener('click',function(){
+                alert("Are you sure not to login?\nThe functionality will be restricted.");
+            })
+    </script>
+</body>
+</html>

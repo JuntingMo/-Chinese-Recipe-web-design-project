@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Duck blood in chili sauce</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/a2.jpg" alt="">
+            <p>Duck blood in chili sauce</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Duck blood in chili sauce</li>
+            <li><span>Description</span>
+                <p>It's mainly made of duck blood, and its taste is spicy.</p>
+            </li>
+            <li><span>Level</span>High</li>
+            <li><span>Time Needed</span>30min</li>
+            <li><span>Main Ingredient</span>Duck blood (500g), soybean sprouts (150g), tripe (100g), ham sausage (150g), agaric (50g), lettuce (100g)</li>
+            <li><span>Auxiliary Ingredient</span>Scallion (50g), salt (3g), pepper (15g), monosodium glutamate (10g), vegetable oil (50g)</li>
+            <br><li><span>Process</span>
+           	<br>1. Pepper, ginger, garlic, salad oil into the pot, stir fry with low heat, add soup after boiling, and then add MSG, sugar, vinegar and other spices.<br>
+            <br>2. Cut the main materials, add them into the red soup, bring to a boil, put them into the container, and sprinkle with scallions.<br>
+            <br>3. Heat up the salad oil, add the pepper and pour it on it quickly.</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

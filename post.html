@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/post.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="main.html">Main</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="my.html">Mine</a></li>
+            <li><a href="post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <div class="pic">
+            <img src="images/1.jpg" alt="">
+            <p>Food Name</p>
+        </div>
+        <ul>
+            <li><span>Recipe Name</span><input type="text" name="" id="" placeholder="input..."></li>
+
+            <li><span>Finished Image Upload</span>
+                <div class="photo-add">
+                    <button class="btn1">Clickhere--></button>
+                    <input type="file" accept="image/*" name="uploader-input" class="uploader-file" id="upload">
+                </div>
+            </li>
+            <li><span>Description</span><textarea name="" id="" cols="30" rows="10" placeholder="Input descriptions..."></textarea></li>
+            <li><span>Level</span>
+                <div class="radio-box"><input type='radio' id="radio1" name="radio"><label for="radio1">High</label></div>
+                <div class="radio-box"><input type='radio' id="radio2" name="radio"><label for="radio2">Middle</label></div>
+                <div class="radio-box"><input type='radio' id="radio3" name="radio"><label for="radio3">Low</label></div>
+            </li>
+            <li><span>Time Needed</span>
+                <select name="" id="">
+                    <option value="">10min</option>
+                    <option value="">20min</option>
+                    <option value="">30min</option>
+                </select>
+            </li>
+            <li><span>Main Ingredient</span>
+                <input type="text" name="" id="" placeholder="input...">
+            </li>
+            <li><span>Auxiliary Ingredient</span>
+                <input type="text" name="" id="" placeholder="input...">
+            </li>
+            <li><span>Spices</span>
+                <input type="text" name="" id="" placeholder="input...">
+            </li>
+        </ul>
+        <div class="btnBox">
+            <button id="btn1">Save</button>
+            <button id="btn2">Submit</button>
+        </div>
+    </div>
+    <script>
+        var btn2 = document.querySelector('#btn2');
+        btn2.addEventListener('click', function() {
+            alert('Are you sure to submit?');
+        })
+
+        document.getElementById('upload').addEventListener('change', function(event) {
+            var $file = event.currentTarget;
+            var formData = new FormData();
+            var file = $file.files;
+            formData = new FormData();
+            formData.append(file[0].name, file[0]);
+            $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: formData,
+                    contentType: false,
+                    processData: false
+                })
+                .done(data => {
+                    $('#box').append(`<div class="photo-item">
+            <img class="btn1" width="100%" height="100%" src="${data.url}"/>
+        </div>`);
+                })
+                .fail(data => {
+                    console.log(data);
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy fired</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .content {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 15px;
+            padding-left: 30px;
+            width: 1500px;
+            height:1500px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .pic {
+            position: relative;
+            margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .pic img:hover {
+            transition: all .3s;
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .pic p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            background: rgba(255,255,255,.85);
+        }
+        .content li {
+            height: 40px;
+            line-height: 40px;
+        }
+        .content li span {
+            float: left;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <ul class="nav">
+            <li><a href="../main.html">Main</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../my.html">Mine</a></li>
+            <li><a href="../post.html">Post</a></li>
+        </ul>
+    </header>
+    <!-- 内容 -->
+    <div class="content">
+        <a href="javascript:history.go(-1);"><button class="back">&lt;Back</button></a>
+        <div class="pic">
+            <img src="../images/c3.jpg" alt="">
+            <p>Spicy fired</p>
+       </div>
+        <ul>
+            <li><span>Recipe Name</span>Spicy fired</li>
+            <li><span>Description</span>
+                <p>Spicy fired is a traditional dish in Xiangtan, Hunan Province. </p>
+            </li>
+            <li><span>Level</span>Mid</li>
+            <li><span>Time Needed</span>30min</li>
+            <li><span>Main Ingredient</span>250g chicken breast, 50g water chestnut, 15g pickled pepper, 1 egg </li>
+            <li><span>Auxiliary Ingredient</span>50g lard, 0.5 tbsp soy sauce, 1 tbsp stock, 0.5 tbsp cooking wine</li>
+            <br><li><span>Process</span><br>1. Remove the fascia from the chicken breast, wash and dice, add salt, soy sauce, cooking wine, and monosodium glutamate, mix well and marinate.<br>
+                                    <br>2. Peel the water chestnuts, wash and dice them; remove the stalks of the pickled peppers and chop the seeds; wash the onion, ginger, and garlic and mince; mix the egg white, starch, and water into a thin paste.<br>
+                                    <br>3. Put the wok on high heat, heat up the lard, smash the chicken with a thin paste, and spread it in the pan until cooked.<br>
+                                    <br>4. Add pickled peppers and stir-fry until all the chicken is red with chili, add water chestnuts, ginger, green onions, garlic and stir-fry to get the aroma, and cook the juice mixed with salt, soy sauce, cooking wine, sugar, MSG, starch and stock , Stir fry quickly, add a little vinegar and stir well.</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
